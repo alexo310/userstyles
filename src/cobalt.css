@@ -1,0 +1,56 @@
+/* ==UserStyle==
+@name         cobrat
+@version      1.1.0
+@namespace    https://userstyles.world/user/alexoy2k
+@description  cobalt but it looks like brat by charli xcx
+@author       alexoy2k
+@license      No License
+==/UserStyle== */
+
+@-moz-document domain("cobalt.tools") {
+    :root {
+        --transparent: #0000;
+        --without-padding: calc(100% - 4rem);
+        --border-15: .15rem solid var(--accent);
+        --border-10: .1rem solid var(--accent);
+        --inset-focus: 0 0 0 .1rem var(--accent) inset;
+        --inset-focus-inv: 0 0 0 .15rem var(--background) inset;
+        --font-mono: "Arial", monospace;
+        --padding: .7rem;
+        --padding-small: .2rem;
+        --padding-dialog: 18px;
+        --line-height: 1.65rem;
+        --red: #F92F60;
+        --blue: #2F8AF9;
+        --gap: .5rem;
+        --gap-no-icon: .6rem;
+        --accent: #191919;
+        --accent-highlight: #FFFFFF0A;
+        --accent-subtext: #000;
+        --accent-hover: #74af00;
+        --accent-hover-elevated: var(--accent-hover);
+        --accent-hover-transparent: #0005;
+        --accent-button: #5f8e00;
+        --accent-button-elevated: var(--accent-button);
+        --glass: var(--background);
+        --glass-lite: var(--background);
+        --subbackground: #6ea400;
+        --background: #8ACF00;
+        --background-backdrop: #0003;
+    }
+    
+    #logo {
+        font-size: 3rem;
+        filter: blur(.05rem);
+        align-items: flex-end;
+    }
+    
+    ::placeholder {
+        color: var(--accent) inset;
+        opacity: 1; /* Firefox */
+    }
+    
+    ::-ms-input-placeholder { /* Edge 12 -18 */
+        color: var(--accent) inset;
+    }
+    }
